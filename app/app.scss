@@ -1,0 +1,178 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+$text-light-gray: #898989;
+$text-medium-gray: #4E4E4E;
+$text-dark-gray: #292929;
+
+$color-primary: #488aff;
+$color-primary-light: #7ab8ff;
+
+.text-small {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.text-gray-light {
+ color: $text-light-gray;   
+}
+.text-gray-medium {
+    color: $text-medium-gray;
+}
+.text-gray-dark {
+    color: $text-dark-gray;
+}
+
+.tabbar.show-tabbar > a:nth-child(2) {
+    overflow: visible;
+}
+.tabbar.show-tabbar > a:nth-child(2)  .tab-button-icon {
+    color: #fff;
+    box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background: $color-primary;
+    position: absolute;
+    top: -50%;
+}
+.tabbar.show-tabbar > a:nth-child(2)  .tab-button-icon::before {
+    font-size: 1.5em;
+}
+
+.app-menu .item-md.item-block .item-inner {
+    border-bottom: none; 
+    color: $text-medium-gray;
+}
+.app-menu .item-md.item-block .icon {
+    color: $text-medium-gray;
+}
+
+.menu-logo {
+    max-width: 160px;
+}
+
+.mytag-list-item {
+     padding-left: 0;
+     background-position: center;
+     background-size: cover;
+}
+
+.mytag-list-item,
+.mytag-list-item > .item-inner  {
+    height: 200px;
+    
+}
+.mytag-list-item > .item-inner  {
+    padding: 8px;
+}
+
+.mytag-list-item > .item-inner  .label {
+    text-align: center;
+}
+
+
+// Checkbox Icons
+.checkbox-category.restaurant input[type=checkbox] + .icon,
+.legend ul > li.restaurant:before
+{
+    background-image: url('../assets/imgs/checkbox/restaurant.png');
+}
+.checkbox-category.fastfood input[type=checkbox] + .icon,
+.legend ul > li.fastfood:before {
+    background-image: url('../assets/imgs/checkbox/fastfood.png');
+}
+.checkbox-category.shopping input[type=checkbox] + .icon,
+.legend ul > li.shopping:before {
+    background-image: url('../assets/imgs/checkbox/shopping.png');
+}
+.checkbox-category.convenience_store input[type=checkbox] + .icon,
+.legend ul > li.convenience_store:before {
+    background-image: url('../assets/imgs/checkbox/convenience_store.png');
+}
+.checkbox-category.bank input[type=checkbox] + .icon,
+.legend ul > li.bank:before {
+    background-image: url('../assets/imgs/checkbox/bank.png');
+}
+.checkbox-category.police input[type=checkbox] + .icon,
+.legend ul > li.police:before {
+    background-image: url('../assets/imgs/checkbox/police.png');
+}
+.checkbox-category.hotel input[type=checkbox] + .icon,
+.legend ul > li.hotel:before {
+    background-image: url('../assets/imgs/checkbox/hotel.png');
+}
+.checkbox-category.spa input[type=checkbox] + .icon,
+.legend ul > li.spa:before {
+    background-image: url('../assets/imgs/checkbox/spa.png');
+}
+.checkbox-category.bar input[type=checkbox] + .icon,
+.legend ul > li.bar:before {
+    background-image: url('../assets/imgs/checkbox/bar.png');
+}
+.checkbox-category.hospital input[type=checkbox] + .icon,
+.legend ul > li.hospital:before {
+    background-image: url('../assets/imgs/checkbox/hospital.png');
+}
+.checkbox-category.other input[type=checkbox] + .icon,
+.legend ul > li.other:before {
+    background-image: url('../assets/imgs/checkbox/other.png');
+}
+.checkbox-category.recreational_activities input[type=checkbox] + .icon,
+.legend ul > li.recreational_activities:before {
+    background-image: url('../assets/imgs/checkbox/recreational_activities.png');
+}
+
+
+.card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+  
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+  
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+  
+  }

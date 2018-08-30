@@ -1,0 +1,8 @@
+{
+  "name": "mrtag",
+  "app_id": "augmented.mytag.com",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
